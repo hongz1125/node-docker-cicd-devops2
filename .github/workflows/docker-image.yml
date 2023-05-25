@@ -1,0 +1,19 @@
+name: Docker Image CI
+
+on:
+  push:
+    branches: [ "master" ]
+
+jobs:
+
+  build:
+
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v3
+    - name: 构建镜像
+      run: docker build -t hongz1125/cicd-web .
+      
+    - name: 推送镜像
+      run: docker push hongz1125/cicd-web
