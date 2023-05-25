@@ -3,6 +3,7 @@
 用来启动一个http服务
 
 # up
+test
 
 ### 构建
 - client
