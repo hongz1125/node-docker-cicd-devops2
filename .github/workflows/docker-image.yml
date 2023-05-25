@@ -11,7 +11,7 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-    - uses: azhi
+    - uses: actions/checkout@v3
     - name: 构建镜像
       run: docker build -t hongz1125/cicd-web .
       
