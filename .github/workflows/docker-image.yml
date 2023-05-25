@@ -16,4 +16,5 @@ jobs:
       run: docker build -t hongz1125/cicd-web .
       
     - name: 推送镜像
+      run: docker login -u hongz1125 -p dckr_pat_57oSYtP8q6EJBVry754mvemqytg
       run: docker push hongz1125/cicd-web
